@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
