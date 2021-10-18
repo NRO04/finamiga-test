@@ -1,14 +1,18 @@
-import React, { BaseSyntheticEvent, useEffect, useState } from 'react';
+import {
+    Switch,
+    Route,
+} from "react-router-dom";
+import ApiCharacters from "../api-characters";
 import './App.css';
 
 function App(): JSX.Element {
 
     return (
-        <>
-            <div className='flex jc-center'>
-                <h3>Welcome Finamiga</h3>
-            </div>
-        </>
+        <Switch>
+            <Route path="/">
+                <ApiCharacters />
+            </Route>
+        </Switch>
     );
 }
 
