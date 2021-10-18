@@ -1,5 +1,5 @@
 export interface ApiCharacterRepository {
 
-    getAll(): Array<any>;
+    getAll(): Promise<any>;
 
 }
