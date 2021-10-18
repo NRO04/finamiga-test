@@ -1,29 +1,17 @@
-import {ApiCharacterService} from "./domain/services/api-character-service";
-import {useEffect, useState} from "react";
-import {Character} from "./domain/models/api-schema/character-schema";
-import CharacterInfo from "./infrastructure/components/Character-Info";
+import ApiCharacters from "./infrastructure/components/ApiCharacters";
+import Container from "./infrastructure/components/Container";
 
 
-const SERVICE = {"CHARACTER-SERVICE": new ApiCharacterService()}
-
-const ApiCharacters = () => {
-
-    const [characters, setCharacters] = useState<Character[]>([]);
-    const getCharacters = async () => {
-        const {results} = await SERVICE["CHARACTER-SERVICE"].getAll();
-        setCharacters(results);
-    }
-    useEffect(() => {
-        getCharacters();
-    }, [])
-
+export default function Main(): JSX.Element {
     return (
-        <div>
-            {characters.map((el) =>
-                <CharacterInfo {...el}/>
-            )}
-        </div>
+        <Container class_style="flex-dir-col">
+            <div className="flex-element">
+                lorem
+            </div>
+            <div className="flex-element">
+                lorem
+            </div>
+            {/*<ApiCharacters/>*/}
+        </Container>
     );
-
 }
-export default ApiCharacters;

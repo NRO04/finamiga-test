@@ -2,7 +2,7 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import ApiCharacters from "../api-characters";
+import Main from "../api-characters";
 import './App.css';
 
 function App(): JSX.Element {
@@ -10,7 +10,7 @@ function App(): JSX.Element {
     return (
         <Switch>
             <Route path="/">
-                <ApiCharacters />
+                <Main/>
             </Route>
         </Switch>
     );

@@ -1,11 +1,59 @@
 .container {
     display: flex;
+    flex: 1;
+    height: 100vh;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(1, 1fr);*/
+    /*grid-template-rows: 1fr 2fr 1fr;*/
+    /*gap: 30px 20px;*/
 }
 
+/*Flex*/
 .flex {
     display: flex;
 }
 
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.flex-element {
+    flex: 1;
+}
+
+/*End Flex*/
+
+.grid {
+    display: grid;
+}
+
+.grid-template-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-template-col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-template-col-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/*Justify - Content*/
 .jc-center {
     justify-content: center;
 }
+
+.jc-fx-end {
+    justify-content: flex-end;
+}
+
+.jc-fx-start {
+    justify-content: flex-start;
+}
+
