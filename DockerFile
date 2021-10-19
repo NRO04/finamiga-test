@@ -1,3 +1,12 @@
 FROM node:lts-alpine3.14
 
+WORKDIR /app
 
+COPY package.json .
+COPY package-lock .
+
+RUN npm i 
+
+COPY . .
+
+CMD ["npm", "start"]
