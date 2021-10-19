@@ -12,7 +12,7 @@ export class ApiCharacterService implements ApiCharacterRepository {
 
     async getAll(): Promise<any> {
         try {
-            const response = await this.http_client.get(`${process.env.REACT_APP_BASE_API_URL}/character`);
+            const response = await this.http_client.get(`${process.env.REACT_APP_BASE_API_URL}/character?page=20`);
             return response.data;
         } catch (error) {
             console.log("Error", error);

@@ -14,7 +14,7 @@ type Props = {
 export default function Container({children, class_style}: Props) {
 
     return (
-        <div className={`container ${class_style}`}>
+        <div className={`grid container gap-50 ${class_style}`}>
             {children}
         </div>
     );
