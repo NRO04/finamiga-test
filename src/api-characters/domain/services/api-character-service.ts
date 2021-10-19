@@ -24,4 +24,15 @@ export class ApiCharacterService implements ApiCharacterRepository {
         }
     }
 
+    async getSingleCharacter(name: string): Promise<any> {
+
+        try {
+            const response = await this.http_client.get(`${process.env.REACT_APP_BASE_API_URL}/character/?name=${name}`);
+            return response.data;
+        } catch (error) {
+            console.log("ERROR", error)
+        }
+
+    }
+
 }
