@@ -5,10 +5,10 @@ export default function CharacterInfo({image, name, species, status, origin}: Ch
     return (
         <div className="item">
             <div className="grid grid-template-col-2">
-                <div  className="flex flex-dir-col jc-center align-i-center">
+                <div className="flex flex-dir-col jc-center align-i-center">
                     <img style={{"width": "105px", "clipPath": "circle(50%)"}} src={image} alt={name}/>
                 </div>
-                <div  className="flex flex-dir-col jc-center align-i-fx-start">
+                <div className="flex flex-dir-col jc-center align-i-fx-start">
                     <div>
                         <h4>{name}</h4>
                     </div>
@@ -23,7 +23,6 @@ export default function CharacterInfo({image, name, species, status, origin}: Ch
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }

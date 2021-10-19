@@ -9,7 +9,7 @@ export default function Main(): JSX.Element {
 
             <FlexElement class_style="flex-dir-col jc-center height-350 bg-img ">
                 <div>
-                    <h1>Buscar Personaje</h1>
+                    <h1 style={{color: "black", textShadow: "2px 2px 0px #FFF"}}>Buscar Personaje</h1>
                 </div>
                 <div>
                     <input className="input-el" type="text" placeholder="Buscar"/>

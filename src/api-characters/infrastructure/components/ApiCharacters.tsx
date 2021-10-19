@@ -2,12 +2,9 @@ import {useEffect, useState} from "react";
 import {Character} from "../../domain/models/api-schema/character-schema";
 import {ApiCharacterService} from "../../domain/services/api-character-service";
 import CharacterInfo from "./Character-Info";
-import Container from "./Container";
-
 
 const SERVICE = {"CHARACTER-SERVICE": new ApiCharacterService()}
 const UTILS = {'UTILS-SERVICE': ''}
-
 
 const ApiCharacters = () => {
 
