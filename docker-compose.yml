@@ -1,0 +1,11 @@
+version: '3.9'
+services: 
+   react-character-dev:
+      container_name: react-finamiga-test
+      build: 
+        context: .
+        dockerfile: Dockerfile 
+      ports: 
+        - '3001:3000'
+      volumes:
+        - './:/usr/src/app'
