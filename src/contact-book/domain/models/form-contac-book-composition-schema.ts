@@ -1,27 +1,15 @@
-export default interface FormContactBookComposition {
 
-    name: {
+type event = {
+    onChange: (params: any) => void
+};
+export default interface FormContactBookCompositionSchema {
+
+    schema: {
+        title?: string;
         type: string;
-        placeholder: string;
+        placeholder?: string;
         name: string;
-        event: {
-
-        }
-    }
-    phone: {
-        type: string
-        placeholder: string;
-        name: string;
-        event: {}
-    }
-
-    email: {
-        type: string;
-        placeholder: string;
-        name: string;
-        event: {
-
-        }
+        event?: event
     }
 
 }
