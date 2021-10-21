@@ -16,7 +16,7 @@ export default function Main(): JSX.Element {
     }, [characterName])
 
     return (
-        <Container class_style="grid-template-row-2">
+        <Container class_style="">
 
             <FlexElement class_style="flex-dir-col jc-center height-350 bg-img ">
                 <div>

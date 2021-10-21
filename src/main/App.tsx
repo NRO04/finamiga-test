@@ -1,19 +1,24 @@
+
 import {
     Switch,
-    Route,
+    Route, Redirect, BrowserRouter as Router
 } from "react-router-dom";
 import Main from "../api-characters";
+import ContactBook from "../contact-book/infrastructure";
 import './App.css';
 
 function App(): JSX.Element {
 
     return (
-        <Switch>
-            <Route path="/">
-                <Main/>
-            </Route>
-        </Switch>
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Main} />
+                <Route exact path="/contact-book" component={ContactBook} />
+                <Redirect to="/" />
+            </Switch>
+        </Router>
     );
+
 }
 
 export default App;

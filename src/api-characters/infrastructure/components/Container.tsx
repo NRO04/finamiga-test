@@ -8,7 +8,7 @@ type Props = {
         | string[]
         | ReactChild
         | ReactChild[];
-    class_style: string;
+    class_style?: string;
 };
 
 export default function Container({children, class_style}: Props) {
